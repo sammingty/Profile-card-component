@@ -1,0 +1,45 @@
+// Variable overrides first
+$card-border-color: none;
+$card-border-radius: 16px;
+
+
+// Then import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size: 1000px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 50vh right 50vw, top 50vh left 50vw;
+}
+
+.card {
+    //height: 500px;
+    width: 400px;
+}
+
+.name, .stats {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.age, .location, .attr {
+    color: hsl(0, 0%, 59%);
+}
+
+.attr {
+    font-size: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 5px white solid;
+    margin-top: -70px;
+}
+
+.cardbg {
+    border-radius: 16px 16px 0 0;
+}
